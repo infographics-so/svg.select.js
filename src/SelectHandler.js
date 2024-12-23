@@ -29,7 +29,7 @@ export class SelectHandler {
     this.updateResizeHandles()
     this.createRotationHandle()
     this.updateRotationHandle()
-    this.observer.observe(this.el.node, { attributes: true })
+    this.observer.observe(this.el.node, { attributes: true, subtree: true })
   }
 
   active(val, options) {
